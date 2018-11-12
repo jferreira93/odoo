@@ -3,13 +3,14 @@
     'name': "Test the request for Redmine",
 
     'summary': """
-        This module send a request for Redmine when
-        the oportunity is marked as won
+        Este plugin envia una request a Redmine cuando una
+        Oportunidad es marcada como ganada.
     """,
 
     'description': """
-        This module send a request for Redmine when
-        the oportunity is marked as won
+        Al marca una oportunidad como ganada en Odoo,
+        se envia una request a Redmine para que cree el projecto
+        en el sistema de HG.
     """,
 
     'author': "LoopStud.io",
