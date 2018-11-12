@@ -3,21 +3,23 @@
     'name': "crm_patch",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com
+        Crea el proycto en Redmine, luego de marcar
+        como ganada la oportunidad en Odoo
     """,
 
      'description': """
-        Long description of module's purpose
+        Se encarga de enviar una request a Redmine para crear
+        el proyecto luego de que en Odoo se marque como ganada una
+        oportunidad
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "LoopStud.io",
+    'website': "http://www.loopstud.io",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Plugin',
+    'category': 'Aplicaciones',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -25,7 +27,7 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
+        # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
