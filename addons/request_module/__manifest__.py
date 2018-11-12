@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Test the request for Redmine",
+    'name': "Crear proyectos en Redmine",
 
     'summary': """
         Este plugin envia una request a Redmine cuando una
@@ -9,7 +9,7 @@
 
     'description': """
         Al marca una oportunidad como ganada en Odoo,
-        se envia una request a Redmine para que cree el projecto
+        se envia una request a Redmine para que cree el proyecto
         en el sistema de HG.
     """,
 
