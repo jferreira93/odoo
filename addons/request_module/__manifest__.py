@@ -1,22 +1,24 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "request_module",
+    'name': "Test the request for Redmine",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
-    'description': """
-        Long description of module's purpose
+        This module send a request for Redmine when
+        the oportunity is marked as won
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'description': """
+        This module send a request for Redmine when
+        the oportunity is marked as won
+    """,
+
+    'author': "LoopStud.io",
+    'website': "http://www.loopstud.io",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Plugin',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
