@@ -5,8 +5,6 @@ import odoo.addons.crm.models.crm_lead as crm_models_crm_lead
 
 import logging
 
-_logger = logging.getLogger(__name__)
-
 class request_module(crm_models_crm_lead.Lead):
     @api.multi
     def action_set_won(self):
