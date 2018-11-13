@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_crm_patch_crm_patch,crm_patch.crm_patch,model_crm_patch_crm_patch,,1,0,0,0
