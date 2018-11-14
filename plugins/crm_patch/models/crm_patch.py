@@ -3,6 +3,8 @@
 from odoo import api
 import logging
 import odoo.addons.crm.models.crm_lead as crm_models_crm_lead
+import requests
+import json
 
 _logger = logging.getLogger(__name__)
 
@@ -13,6 +15,14 @@ class crm_patch(crm_models_crm_lead.Lead):
         """ Won semantic: probability = 100 (active untouched) """
         logging.warning("Yeeeesss! Mark as won! (plugin) %s", self)
         for lead in self:
+
+            url = "http://localhost:3000/projects.json"
+            data = { "project": { "name": "projectTestOdoo", "identifier": "1asdf231231231231" } }
+            headers = {"Content-type": "application/json", "X-Redmine-API-Key": "ce60ab267dc411a725b0f36a77fe4097dc118542"}
+            r = requests.post(url, data=json.dumps(data), headers=headers)
+            logging.warning("Reques status code is %s", r.status_code)
+            logging.warning("Reques response is %s", r.json())
+
             logging.warning("Lead name is %s", lead.name)
             logging.warning("Lead contact_name is %s", lead.contact_name)
             logging.warning("Lead description is %s", lead.description)
