@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api
+from odoo import api, models
 import logging
-import odoo.addons.crm.models.crm_lead as crm_models_crm_lead
 import requests
 import json
 
 _logger = logging.getLogger(__name__)
 
-class crm_patch(crm_models_crm_lead.Lead):
+class Lead(models.Model):
+    _inherit = "crm.lead"
 
     @api.multi
     def action_set_won(self):
