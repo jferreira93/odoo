@@ -24,6 +24,7 @@ class Lead(models.Model):
 
     def create_identifier(self, lead_name):
         identifier = lead_name.replace(" ", "_").lower()
+        identifier += '_a1'
 
         return identifier
 
